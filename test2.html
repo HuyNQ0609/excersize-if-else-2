@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>
+        <label>Meters</label>
+        <label><input id="inputMeters" type="number" placeholder="Meters"
+                oninput="temperatureConverter(this.value)"
+                onchange="temperatureConverter(this.value)"></label>
+    </p>
+    <p>Feet: <span id="feet"></span></p>
+</body>
+<script>
+    function temperatureConverter(valNum) {
+        let result;
+        valNum = parseFloat(valNum);
+        result = valNum * 3.2808;
+        document.getElementById("feet").innerHTML = result;
+    }
+</script>
+</html>

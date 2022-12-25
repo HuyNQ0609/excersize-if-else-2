@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test 11</title>
+</head>
+<body>
+  <script>
+    let a = parseInt(prompt("Enter the amount you earned this month: "));
+    if(a > 0 && a <= 5000000) {
+      document.write("The tax you have to pay is: " + a * 5 / 100 + " VND");
+    } else if(a > 5000000) {
+      document.write("The tax you have to pay is: " + (a * 10 / 100 - 250000) + " VND");
+    } else if(a > 10000000) {
+      document.write("The tax you have to pay is: " + (a * 15 / 100 - 750000) + " VND");
+    } else if(a > 18000000) {
+      document.write("The tax you have to pay is: " + (a * 20 / 100 - 1650000) + " VND");
+    } else if(a > 32000000) {
+      document.write("The tax you have to pay is: " + (a * 25 / 100 - 3250000) + " VND");
+    } else if(a > 52000000) {
+      document.write("The tax you have to pay is: " + (a * 30 / 100 - 5850000) + " VND");
+    } else {
+      document.write("The tax you have to pay is: " + (a * 35 / 100 - 9850000) + " VND");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test 1</title>
+</head>
+<body>
+    <p>
+        <label>Celsius</label>
+        <label><input id="inputCelsius" type="number" placeholder="Celsius"
+                  oninput="temperatureConverter(this.value)"
+                  onchange="temperatureConverter(this.value)"></label>
+    </p>
+<p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+</body>
+<script>
+    function temperatureConverter(valNum) {
+        let result;
+        valNum = parseFloat(valNum);
+        result = 32 + valNum * 9 / 5;
+        document.getElementById("outputFahrenheit").innerHTML = result;
+    }
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test 8</title>
+</head>
+<body>
+  <script>
+    let age = parseInt(prompt("Enter your age: "));
+    if( age > 0 && age < 120) {
+      if( age === Math.round(age)) {
+        alert("Your age is: " + Math.round(age));
+      } else {
+        alert("That is not your age!")
+      }
+    } else {
+      alert("Please re-enter your age!")
+    }
+  </script>
+</body>
+</html>

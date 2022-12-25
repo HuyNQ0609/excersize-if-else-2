@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test 9</title>
+</head>
+<body>
+  <script>
+      let a = parseInt(prompt("Enter edge a:"));
+      let b = parseInt(prompt("Enter edge b:"));
+      let c = parseInt(prompt("Enter edge c:"));
+      if( a > 0 && b > 0 && c > 0) {
+        if( a + b > c || b + c > a || a + c > b) {
+          document.write("a, b, c are the three sides of a triangle.");
+        } else {
+          document.write("a, b, c are not the three sides of a triangle.");
+        }
+      } else {
+          document.write("The sides of triangle must be greater than 0.");
+      }
+  </script>
+</body>
+</html>

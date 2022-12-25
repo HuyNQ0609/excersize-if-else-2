@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test 10</title>
+</head>
+<body>
+  <script>
+    let a = parseInt(prompt("Enter the number of electricity you have used this month:"));
+    if( a > 0 && a <= 50) {
+      document.write("The amount of electricity you have to pay this month is: " + 480 * a + " VND");
+    } else if( a > 50 && a <= 100) {
+      document.write("The amount of electricity you have to pay this month is: " + 700 * a + " VND");
+    } else {
+      document.write("The amount of electricity you have to pay this month is: " + 900 * a + " VND");
+    }
+  </script>
+</body>
+</html>
